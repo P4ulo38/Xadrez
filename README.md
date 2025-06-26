@@ -1,39 +1,49 @@
-# ♟️ Desafio Xadrez em C
+# ♟️ Desafio Xadrez em C / Chess Challenge in C
 
-Projeto desenvolvido como parte de um desafio introdutório em C, simulando a movimentação de três peças de xadrez: **Torre**, **Bispo** e **Rainha**. Cada peça utiliza uma estrutura de repetição diferente para reforçar o uso de `for`, `while` e `do-while`.
-
----
-
-## 🎯 Objetivo
-
-Exercitar o uso das estruturas de repetição em C simulando a movimentação das peças de xadrez no console, exibindo a direção de cada movimento a cada casa percorrida.
+Projeto desenvolvido como parte de uma série de desafios em linguagem C, simulando a movimentação das peças de xadrez: **Torre**, **Bispo**, **Rainha** e **Cavalo**. As implementações seguem os níveis de dificuldade crescentes, utilizando estruturas de repetição, **recursividade** e **loops aninhados**.
 
 ---
 
-## 💡 Peças e lógica de movimentação
-
-- **Torre**: move 5 casas para a direita → estrutura `for`
-- **Bispo**: move 5 casas na diagonal (cima e direita) → estrutura `while`
-- **Rainha**: move 8 casas para a esquerda → estrutura `do-while`
+Project developed as part of a series of C programming challenges, simulating the movements of chess pieces: **Rook**, **Bishop**, **Queen**, and **Knight**. Each challenge increases in complexity, involving loops, **recursion**, and **nested control structures**.
 
 ---
 
-## 📄 Arquivo principal
+## 🎯 Objetivo / Objective
 
-- `MovimentandoPeças.c`  
-  Contém toda a lógica e simulação das três peças, com comentários explicativos.
+Simular no console os movimentos básicos das peças de xadrez utilizando estruturas de repetição, recursividade e controle de fluxo.
+
+Simulate basic chess piece movements in the terminal using loops, recursion, and control flow structures.
 
 ---
 
-## 🛠️ Compilando o projeto
+## 🧠 Lógica das Peças / Piece Logic
+
+| Peça (PT) | Piece (EN) | Movimento | Estrutura utilizada |
+|----------|------------|-----------|----------------------|
+| Torre    | Rook       | 5 casas para a Direita / 5 steps Right | Recursividade / Recursion |
+| Bispo    | Bishop     | 5 casas em Diagonal (Cima + Direita) / Diagonal Up + Right | Recursividade + Loops aninhados |
+| Rainha   | Queen      | 8 casas para a Esquerda / 8 steps Left | Recursividade / Recursion |
+| Cavalo   | Knight     | Movimento em “L” (2 cima, 1 direita) / L-shape (2 up, 1 right) | Loops aninhados com controle de fluxo |
+
+---
+
+## 📄 Arquivo Principal / Main File
+
+- `Xadrez.c`  
+  Contém toda a implementação dos movimentos, organizada por função e com comentários explicativos.  
+  Includes all movement implementations, structured by function and clearly commented.
+
+---
+
+## ⚙️ Compilação / Compile
 
 ```bash
-gcc MovimentandoPeças.c -o xadrez.exe
+gcc Xadrez.c -o xadrez.exe
 ```
 
 ---
 
-## ▶️ Executando
+## ▶️ Execução / Run
 
 ```bash
 ./xadrez.exe
@@ -41,37 +51,31 @@ gcc MovimentandoPeças.c -o xadrez.exe
 
 ---
 
-## 🧪 Exemplo de saída
+## 🧪 Exemplo de Saída / Sample Output
 
 ```
-Movimento da Torre (5 casas para a direita):
-Direita (1)
-Direita (2)
-Direita (3)
-Direita (4)
-Direita (5)
+Movimento da Torre:
+Direita
+Direita
+...
 
-Movimento do Bispo (5 casas na diagonal Cima + Direita):
-Cima Direita (1)
-Cima Direita (2)
-Cima Direita (3)
-Cima Direita (4)
-Cima Direita (5)
-
-Movimento da Rainha (8 casas para a esquerda):
-Esquerda (1)
-Esquerda (2)
-Esquerda (3)
-Esquerda (4)
-Esquerda (5)
-Esquerda (6)
-Esquerda (7)
-Esquerda (8)
+Movimento do Cavalo:
+Cima
+Cima
+Direita
 ```
 
 ---
 
-## 👨‍💻 Autor
+## 🧩 Destaques Técnicos / Technical Highlights
+
+- Uso de **funções recursivas** seguras para simular trajetos
+- Controle de fluxo com `break` e `continue` para o Cavalo
+- Código **modular**, limpo e organizado com boas práticas
+
+---
+
+## 👨‍💻 Autor / Author
 
 **Paulo Augusto**  
 📧 [pauloaugusto37.ti@gmail.com](mailto:pauloaugusto37.ti@gmail.com)  
@@ -79,6 +83,7 @@ Esquerda (8)
 
 ---
 
-## 🚀 Licença
+## 🚀 Licença / License
 
-Projeto educacional e pessoal. Fique à vontade para estudar, adaptar e compartilhar!
+Projeto de caráter educacional.  
+Educational project — feel free to study, adapt, and share!
